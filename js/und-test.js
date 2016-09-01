@@ -108,23 +108,32 @@
 // console.log( obj);
 
 //17. Confrontiamo due oggetti in JavaScript
-var obj1 = {
-    nome: "Andrea",
-    cognome: "Barghigiani",
-    eta: 32
-};
-
-var obj2 = {
-    nome: "Andrea",
-    cognome: "Barghigiani",
-    eta: 32
-}
-
-var confronto = obj1 == obj2;
-
-console.log( confronto );
+// var obj1 = {
+//     nome: "Andrea",
+//     cognome: "Barghigiani",
+//     eta: 32
+// };
+//
+// var obj2 = {
+//     nome: "Andrea",
+//     cognome: "Barghigiani",
+//     eta: 32
+// }
+//
+// var confronto = obj1 == obj2;
+//
+// console.log( confronto );
 
 //18. Confronto due oggetti con Underscore.js
-var confronto = _.isEqual( obj1, obj2 );
+// var confronto = _.isEqual( obj1, obj2 );
+//
+// console.log( confronto );
 
-console.log( confronto );
+//19. Fissare una funzione a un oggetto
+var fun = function(saluto){
+    return saluto + ', ' + this.nome
+};
+
+fun = _.bind(fun, {nome: "Andrea"}, 'Ciao');
+
+console.log( fun("Salve") );
