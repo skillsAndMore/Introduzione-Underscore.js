@@ -123,3 +123,8 @@ var obj2 = {
 var confronto = obj1 == obj2;
 
 console.log( confronto );
+
+//18. Confronto due oggetti con Underscore.js
+var confronto = _.isEqual( obj1, obj2 );
+
+console.log( confronto );
