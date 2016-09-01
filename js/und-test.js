@@ -75,9 +75,15 @@
 
 
 //13. Calcoliamo l'intersezione tra array
-var ins1 = [ 1, 2, 3, 4, 5, 6],
-ins2 = [ 2, 4, 6, 8 ],
-ins3 = [ 1, 4, 5, 9, 12, 15];
+// var ins1 = [ 1, 2, 3, 4, 5, 6],
+// ins2 = [ 2, 4, 6, 8 ],
+// ins3 = [ 1, 4, 5, 9, 12, 15];
+//
+// var int = _.intersection( ins1, ins2, ins3 );
+// console.log( int );
 
-var int = _.intersection( ins1, ins2, ins3 );
-console.log( int );
+//14. Troviamo l'indice di un determinato valore
+var arr = [ 23, "ciao", 42, "mondo" ];
+var index = _.indexOf( arr, 42 );
+
+console.log( index );
