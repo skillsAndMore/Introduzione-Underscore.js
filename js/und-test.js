@@ -83,7 +83,17 @@
 // console.log( int );
 
 //14. Troviamo l'indice di un determinato valore
-var arr = [ 23, "ciao", 42, "mondo" ];
-var index = _.indexOf( arr, 42 );
+// var arr = [ 23, "ciao", 42, "mondo" ];
+// var index = _.indexOf( arr, 42 );
+//
+// console.log( index );
 
-console.log( index );
+//15. Raccogliamo le chiavi e i valori in array
+var obj = {
+    nome: "Andrea",
+    cognome: "Barghigiani",
+    eta: 32
+}
+
+var accoppiato = _.pairs( obj );
+console.log( accoppiato );
