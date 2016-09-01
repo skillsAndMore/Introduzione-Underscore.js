@@ -21,14 +21,14 @@
 // });
 
 //4. Array che contiene i linguaggi e i suoi relativi framework
-var langFramework = [
-    { linguaggio: 'PHP', framework: 'Zend' },
-    { linguaggio: 'PHP', framework: 'Laravel' },
-    { linguaggio: 'Python', framework: 'Django' },
-    { linguaggio: 'Ruby', framework: 'Ruby on Rails' },
-    { linguaggio: 'JavaScript', framework: 'jQuery' },
-    { linguaggio: 'JavaScript', framework: 'AngularJs' }
-];
+// var langFramework = [
+//     { linguaggio: 'PHP', framework: 'Zend' },
+//     { linguaggio: 'PHP', framework: 'Laravel' },
+//     { linguaggio: 'Python', framework: 'Django' },
+//     { linguaggio: 'Ruby', framework: 'Ruby on Rails' },
+//     { linguaggio: 'JavaScript', framework: 'jQuery' },
+//     { linguaggio: 'JavaScript', framework: 'AngularJs' }
+// ];
 
 //5. Estrapoliamo soltanto i valori da un array associativo
 // var frameworks = [];
@@ -38,5 +38,17 @@ var langFramework = [
 // console.log( frameworks );
 
 //6. Usiamo pluck per ottenere i valori di un array
-var framework = _.pluck( langFramework, 'framework' );
-console.log( framework );
+// var framework = _.pluck( langFramework, 'framework' );
+// console.log( framework );
+
+
+//7. Array contenente soltanto valori numerici
+var nums = [ 1, 3, 6, 9, 12 ];
+
+//8. Incremento tutti i valori moltiplicandoli per 3
+var triple = [];
+for( var i = 0; i < nums.length; i++ ){
+    triple.push( nums[i] * 3 );
+}
+
+console.log( triple );
