@@ -99,10 +99,27 @@
 // console.log( accoppiato );
 
 //16. Come estendere un oggetto
-var obj = {
+// var obj = {
+//     nome: "Andrea",
+//     cognome: "Parghigiani"
+// }
+//
+// var obj = _.extend( obj, { cognome: "Barghigiani", eta: 32 });
+// console.log( obj);
+
+//17. Confrontiamo due oggetti in JavaScript
+var obj1 = {
     nome: "Andrea",
-    cognome: "Parghigiani"
+    cognome: "Barghigiani",
+    eta: 32
+};
+
+var obj2 = {
+    nome: "Andrea",
+    cognome: "Barghigiani",
+    eta: 32
 }
 
-var obj = _.extend( obj, { cognome: "Barghigiani", eta: 32 });
-console.log( obj);
+var confronto = obj1 == obj2;
+
+console.log( confronto );
