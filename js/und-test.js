@@ -146,14 +146,17 @@
 // var sott5 = _.partial( sottrazione, 5 );
 // console.log( sott5( 45 ) );
 
-//22. Esempio di funzionamento di after()
-var btn = document.querySelector('button'),
-cb;
+//21. Esempio di funzionamento di after()
+// var btn = document.querySelector('button'),
+// cb;
+//
+// cb = _.after(4, function() {
+//     alert(':)');
+// });
+//
+// btn.onclick = function fun(){
+//     cb();
+// }
 
-cb = _.after(4, function() {
-    alert(':)');
-});
-
-btn.onclick = function fun(){
-    cb();
-}
+//22. Piccolo esempio di times()
+_.times( 3, function fun(){ alert( "Ciao Andrea!" )} );
