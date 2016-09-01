@@ -43,7 +43,7 @@
 
 
 //7. Array contenente soltanto valori numerici
-var nums = [ 1, 3, 6, 9, 12 ];
+// var nums = [ 1, 3, 6, 9, 12 ];
 
 //8. Incremento tutti i valori moltiplicandoli per 3
 // var triple = [];
@@ -54,5 +54,17 @@ var nums = [ 1, 3, 6, 9, 12 ];
 // console.log( triple );
 
 //9. Incremento i valori con Underscore.js
-var triple = _.map( nums, function( num ){ return num * 3; });
-console.log( triple );
+// var triple = _.map( nums, function( num ){ return num * 3; });
+// console.log( triple );
+
+//10. Gli array da usare con zip()
+var nomi = [ "Andrea", "Eugenio", "Daniele" ],
+cognomi = [ "Barghigiani", "Petullà", "Scasciafratte" ],
+eta = [ 32, 29, 26 ];
+
+//11. Aggreghiamo i valori con JavaScript vanilla
+var aggregati = [];
+for( var i = 0; i < nomi.length; i++ ){
+    aggregati.push( [nomi[i], cognomi[i], eta[i]] );
+}
+console.log( aggregati );
