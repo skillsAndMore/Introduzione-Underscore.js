@@ -159,4 +159,14 @@
 // }
 
 //22. Piccolo esempio di times()
-_.times( 3, function fun(){ alert( "Ciao Andrea!" )} );
+// _.times( 3, function fun(){ alert( "Ciao Andrea!" )} );
+
+//23. Come estendere Underscore.js usando i mixin
+_.mixin({
+  capitalize: function(string) {
+    return string.charAt(0).toUpperCase() + string.substring(1).toLowerCase();
+  }
+});
+var test = _.capitalize( "cIAo" );
+
+console.log(test);
