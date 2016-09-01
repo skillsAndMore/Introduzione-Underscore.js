@@ -31,8 +31,12 @@ var langFramework = [
 ];
 
 //5. Estrapoliamo soltanto i valori da un array associativo
-var frameworks = [];
-for (var i = 0; i < langFramework.length; i++) {
-    frameworks.push( langFramework[i]['framework'] );
-}
-console.log( frameworks );
+// var frameworks = [];
+// for (var i = 0; i < langFramework.length; i++) {
+//     frameworks.push( langFramework[i]['framework'] );
+// }
+// console.log( frameworks );
+
+//6. Usiamo pluck per ottenere i valori di un array
+var framework = _.pluck( langFramework, 'framework' );
+console.log( framework );
