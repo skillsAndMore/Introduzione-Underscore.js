@@ -14,8 +14,25 @@
 // }
 
 //3. Trasformazione ciclo for con each
-var linguaggi = [ 'PHP', 'JavaScript', 'CSS', 'HTML', 'Ruby', 'Go' ];
+// var linguaggi = [ 'PHP', 'JavaScript', 'CSS', 'HTML', 'Ruby', 'Go' ];
+//
+// _.each( linguaggi, function( linguaggio, index, linguaggi ) {
+//     console.log( 'Linguaggio: ' + linguaggio + ' con indice(' + index + ')' );
+// });
 
-_.each( linguaggi, function( linguaggio, index, linguaggi ) {
-    console.log( 'Linguaggio: ' + linguaggio + ' con indice(' + index + ')' );
-});
+//4. Array che contiene i linguaggi e i suoi relativi framework
+var langFramework = [
+    { linguaggio: 'PHP', framework: 'Zend' },
+    { linguaggio: 'PHP', framework: 'Laravel' },
+    { linguaggio: 'Python', framework: 'Django' },
+    { linguaggio: 'Ruby', framework: 'Ruby on Rails' },
+    { linguaggio: 'JavaScript', framework: 'jQuery' },
+    { linguaggio: 'JavaScript', framework: 'AngularJs' }
+];
+
+//5. Estrapoliamo soltanto i valori da un array associativo
+var frameworks = [];
+for (var i = 0; i < langFramework.length; i++) {
+    frameworks.push( langFramework[i]['framework'] );
+}
+console.log( frameworks );
