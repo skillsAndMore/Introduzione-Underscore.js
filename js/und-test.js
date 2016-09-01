@@ -130,10 +130,18 @@
 // console.log( confronto );
 
 //19. Fissare una funzione a un oggetto
-var fun = function(saluto){
-    return saluto + ', ' + this.nome
+// var fun = function(saluto){
+//     return saluto + ', ' + this.nome
+// };
+//
+// fun = _.bind(fun, {nome: "Andrea"}, 'Ciao');
+//
+// console.log( fun("Salve") );
+
+//20. Come creare un parziale di una funzione
+var sottrazione = function(a, b) {
+    return b - a;
 };
 
-fun = _.bind(fun, {nome: "Andrea"}, 'Ciao');
-
-console.log( fun("Salve") );
+var sott5 = _.partial( sottrazione, 5 );
+console.log( sott5( 45 ) );
