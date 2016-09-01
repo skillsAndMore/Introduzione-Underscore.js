@@ -139,9 +139,21 @@
 // console.log( fun("Salve") );
 
 //20. Come creare un parziale di una funzione
-var sottrazione = function(a, b) {
-    return b - a;
-};
+// var sottrazione = function(a, b) {
+//     return b - a;
+// };
+//
+// var sott5 = _.partial( sottrazione, 5 );
+// console.log( sott5( 45 ) );
 
-var sott5 = _.partial( sottrazione, 5 );
-console.log( sott5( 45 ) );
+//22. Esempio di funzionamento di after()
+var btn = document.querySelector('button'),
+cb;
+
+cb = _.after(4, function() {
+    alert(':)');
+});
+
+btn.onclick = function fun(){
+    cb();
+}
