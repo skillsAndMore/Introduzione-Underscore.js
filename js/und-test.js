@@ -58,13 +58,26 @@
 // console.log( triple );
 
 //10. Gli array da usare con zip()
-var nomi = [ "Andrea", "Eugenio", "Daniele" ],
-cognomi = [ "Barghigiani", "Petullà", "Scasciafratte" ],
-eta = [ 32, 29, 26 ];
+// var nomi = [ "Andrea", "Eugenio", "Daniele" ],
+// cognomi = [ "Barghigiani", "Petullà", "Scasciafratte" ],
+// eta = [ 32, 29, 26 ];
 
 //11. Aggreghiamo i valori con JavaScript vanilla
-var aggregati = [];
-for( var i = 0; i < nomi.length; i++ ){
-    aggregati.push( [nomi[i], cognomi[i], eta[i]] );
-}
-console.log( aggregati );
+// var aggregati = [];
+// for( var i = 0; i < nomi.length; i++ ){
+//     aggregati.push( [nomi[i], cognomi[i], eta[i]] );
+// }
+// console.log( aggregati );
+
+//12. Aggreghiamo i valori con Underscore.js
+// var aggregati = _.zip( nomi, cognomi, eta );
+// console.log( aggregati );
+
+
+//13. Calcoliamo l'intersezione tra array
+var ins1 = [ 1, 2, 3, 4, 5, 6],
+ins2 = [ 2, 4, 6, 8 ],
+ins3 = [ 1, 4, 5, 9, 12, 15];
+
+var int = _.intersection( ins1, ins2, ins3 );
+console.log( int );
