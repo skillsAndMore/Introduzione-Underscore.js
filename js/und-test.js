@@ -89,11 +89,20 @@
 // console.log( index );
 
 //15. Raccogliamo le chiavi e i valori in array
+// var obj = {
+//     nome: "Andrea",
+//     cognome: "Barghigiani",
+//     eta: 32
+// }
+//
+// var accoppiato = _.pairs( obj );
+// console.log( accoppiato );
+
+//16. Come estendere un oggetto
 var obj = {
     nome: "Andrea",
-    cognome: "Barghigiani",
-    eta: 32
+    cognome: "Parghigiani"
 }
 
-var accoppiato = _.pairs( obj );
-console.log( accoppiato );
+var obj = _.extend( obj, { cognome: "Barghigiani", eta: 32 });
+console.log( obj);
