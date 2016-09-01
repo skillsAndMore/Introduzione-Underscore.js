@@ -46,9 +46,13 @@
 var nums = [ 1, 3, 6, 9, 12 ];
 
 //8. Incremento tutti i valori moltiplicandoli per 3
-var triple = [];
-for( var i = 0; i < nums.length; i++ ){
-    triple.push( nums[i] * 3 );
-}
+// var triple = [];
+// for( var i = 0; i < nums.length; i++ ){
+//     triple.push( nums[i] * 3 );
+// }
+//
+// console.log( triple );
 
+//9. Incremento i valori con Underscore.js
+var triple = _.map( nums, function( num ){ return num * 3; });
 console.log( triple );
