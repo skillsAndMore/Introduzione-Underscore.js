@@ -162,11 +162,26 @@
 // _.times( 3, function fun(){ alert( "Ciao Andrea!" )} );
 
 //23. Come estendere Underscore.js usando i mixin
-_.mixin({
-  capitalize: function(string) {
-    return string.charAt(0).toUpperCase() + string.substring(1).toLowerCase();
-  }
-});
-var test = _.capitalize( "cIAo" );
+// _.mixin({
+//   capitalize: function(string) {
+//     return string.charAt(0).toUpperCase() + string.substring(1).toLowerCase();
+//   }
+// });
+// var test = _.capitalize( "cIAo" );
+//
+// console.log(test);
 
-console.log(test);
+//25. Come creare un template con Underscore.js
+var linguaggi = [ 'PHP', 'JavaScript', 'CSS', 'HTML', 'Ruby', 'Go' ],
+    linguaggiTemplate = _.template('<li><%= linguaggio %></li>'),
+    content = '';
+
+_.each(linguaggi, function(linguaggio, index, linguaggi) {
+  content += linguaggiTemplate({
+    linguaggio: linguaggio
+  });
+});
+
+var container = document.createElement('ol');
+container.innerHTML = content;
+document.body.appendChild(container);
